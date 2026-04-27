@@ -8,7 +8,6 @@ import { Plantas } from '@/components/Plantas';
 import { Galeria } from '@/components/Galeria';
 import { Localizacao } from '@/components/Localizacao';
 import { FAQ } from '@/components/FAQ';
-import { LeadForm } from '@/components/LeadForm';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
 
 export const metadata = generatePageMetadata({
@@ -28,7 +27,6 @@ export default function Home() {
         <Galeria />
         <Localizacao />
         <FAQ />
-        <LeadForm />
         <WhatsAppButton />
       </main>
     </>
