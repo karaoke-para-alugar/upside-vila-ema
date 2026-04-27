@@ -1,7 +1,7 @@
 // lib/wordpress.ts
 import { Metadata } from 'next';
 
-const WP_API_URL = process.env.WP_API_URL || 'https://upsidevilaema.online/wp-json';
+const WP_API_URL = process.env.WP_API_URL || 'https://painel.upside-vila-ema.online/wp-json';
 
 /**
  * Interfaces para tipagem dos dados da REST API do WordPress
