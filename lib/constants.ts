@@ -1,7 +1,7 @@
 // lib/constants.ts — Variáveis globais e constantes do projeto Upside Vila Ema
 
 /** Domínio oficial que será indexado (NÃO usar o domínio de staging) */
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://upside-vila-ema.online';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://novo.upside-vila-ema.online';
 
 /** Nome do empreendimento para uso em títulos e schemas */
 export const SITE_NAME = 'Upside Vila Ema';
