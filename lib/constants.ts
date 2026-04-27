@@ -11,7 +11,7 @@ export const SITE_DESCRIPTION =
   'Apartamentos de 2 e 3 dormitórios na Vila Ema, São Paulo. Lazer completo, 5 min do Metrô São Lucas. Conheça o Upside Vila Ema.';
 
 /** Telefone e WhatsApp do corretor */
-export const WHATSAPP_NUMBER = '5511983459542'; // Matarazzo, Consultor de Imóveis
+export const WHATSAPP_NUMBER = '5511972121555'; // Matarazzo, Consultor de Imóveis
 export const WHATSAPP_MESSAGE = 'Olá Matarazzo! Tenho interesse no Upside Vila Ema e gostaria de mais informações.';
 
 /** Localização do empreendimento */
