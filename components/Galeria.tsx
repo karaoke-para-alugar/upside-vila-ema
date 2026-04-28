@@ -2,12 +2,12 @@ import Image from 'next/image';
 
 export function Galeria() {
   const images = [
-    { src: 'https://upside-vila-ema.online/wp-content/uploads/2025/09/UP_SIDE_VIEW_VILA_EMA.webp', alt: 'Fachada Noturna' },
-    { src: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Up_side_View_Vila_Ema_Sala_de_jantar-1.webp', alt: 'Sala de Jantar' },
-    { src: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Lacamento_Up_side_View_Vila_Ema_Fachada-1.webp', alt: 'Fachada Dia' },
-    { src: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Up_side_View_Vila_Ema_Dormitorio-1.webp', alt: 'Suíte Master' },
-    { src: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Up_side_View_Vila_Ema_Sala_de_estar-1.webp', alt: 'Living Ampliado' },
-    { src: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Up_side_View_Vila_Ema_Banheiro-1.webp', alt: 'Banheiro Decorado' },
+    { src: 'https://upside-vila-ema.online/wp-content/uploads/2025/09/UP_SIDE_VIEW_VILA_EMA.webp', alt: 'Fachada Principal' },
+    { src: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Up_side_View_Vila_Ema_piscina_infantil-1.webp', alt: 'Piscina Infantil' },
+    { src: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Up_side_Vila_Ema_churrasqueira-1.webp', alt: 'Churrasqueira Gourmet' },
+    { src: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Decorado_UP_SIDE_VIEW_VILA_EMA_SALA-scaled-2-2.webp', alt: 'Living Decorado' },
+    { src: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Up_Side_Vila_Ema_Brinquedoteca-1.webp', alt: 'Brinquedoteca' },
+    { src: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Decorado_UP_SIDE_VIEW_VILA_EMA_QUARTO-scaled-1-1.webp', alt: 'Suíte Master' },
   ];
 
   return (

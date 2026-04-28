@@ -4,12 +4,6 @@ import { CheckCircle2 } from 'lucide-react';
 export function Plantas() {
   const plantas = [
     {
-      title: '42M²',
-      dormitorios: '2 DORMITÓRIOS',
-      image: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Up_Side_View_Vila_Ema_Planta_2_Dormitorios_42m-scaled-1-1.webp',
-      features: ['Planta Inteligente', 'Living Integrado', 'Cozinha Americana'],
-    },
-    {
       title: '47M²',
       dormitorios: '2 DORMITÓRIOS',
       image: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/UpSide_View_Vila_Ema_Planta_2_Dormitorios_47m-scaled-1-1.webp',
@@ -22,15 +16,21 @@ export function Plantas() {
       features: ['Terraço Social', 'Ventilação Natural', 'Área de Serviço'],
     },
     {
-      title: '68M²',
+      title: '80,5M²',
+      dormitorios: '2 DORM. (1 SUÍTE)',
+      image: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Up_Side_Vila_Ema_Planta_2_Dormitorios_805m-scaled-1-1.webp',
+      features: ['Living Ampliado', 'Suíte Master', 'Cozinha Aberta'],
+    },
+    {
+      title: '80,5M²',
       dormitorios: '3 DORM. (1 SUÍTE)',
-      image: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/UpSide_View_Vila_Ema_Planta_3_Dormitorios_68m-scaled-1.webp',
-      features: ['Varanda Gourmet', 'Suíte com Closet', '2 Vagas demarcadas'],
+      image: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/UpSide_Vila_Ema_Planta_3_Dormitorios_805m-scaled-1-1.webp',
+      features: ['Varanda Gourmet', 'Suíte com Closet', 'Banheiro Social'],
     },
     {
       title: '92M²',
       dormitorios: '3 DORM. (1 SUÍTE)',
-      image: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/UpSide_View_Vila_Ema_Planta_3_Dormitorios_92m-scaled-1.webp',
+      image: 'https://upside-vila-ema.online/wp-content/uploads/2026/04/UpSide_Vila_Ema_Planta_3_Dormitorios_92m-scaled-1-1.webp',
       features: ['Amplo Terraço Gourmet', 'Sala 2 Ambientes', 'Opção Living Ampliado'],
     }
   ];

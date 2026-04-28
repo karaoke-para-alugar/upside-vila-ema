@@ -5,8 +5,8 @@ export function Hero() {
     <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://upside-vila-ema.online/wp-content/uploads/2025/09/UP_SIDE_VIEW_VILA_EMA-1.webp"
-          alt="Upside Vila Ema Interior"
+          src="https://upside-vila-ema.online/wp-content/uploads/2026/04/Upside_View_Vila_Ema_Baner-1.webp"
+          alt="Upside Vila Ema Fachada"
           fill
           className="object-cover object-center"
           priority
