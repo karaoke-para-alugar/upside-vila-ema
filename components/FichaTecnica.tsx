@@ -1,34 +1,34 @@
-import { MapPin, Home, Car, TreePine, Train, Maximize } from 'lucide-react';
+import { MapPin, Home, Car, TreePine, Train, Maximize, Dumbbell, Waves, PartyPopper } from 'lucide-react';
 
 export function FichaTecnica() {
   const features = [
-    { icon: <Home className="w-10 h-10 text-white" />, title: '2 e 3 Dormitórios', desc: 'Com suíte e varanda gourmet' },
-    { icon: <Maximize className="w-10 h-10 text-white" />, title: 'Até 92m²', desc: 'Plantas inteligentes e espaçosas' },
-    { icon: <Train className="w-10 h-10 text-white" />, title: 'Metrô São Lucas', desc: 'Apenas 5 minutos de distância' },
-    { icon: <TreePine className="w-10 h-10 text-white" />, title: 'Lazer Completo', desc: 'Piscina, academia e salão de festas' },
-    { icon: <Car className="w-10 h-10 text-white" />, title: 'Vagas Livres', desc: 'Opções com 1 ou 2 vagas demarcadas' },
-    { icon: <MapPin className="w-10 h-10 text-white" />, title: 'Vila Ema', desc: 'Bairro tradicional e super valorizado' },
+    { icon: <Home className="w-8 h-8" />, title: '2 e 3 Dorms', desc: 'Com suíte e varanda gourmet' },
+    { icon: <Maximize className="w-8 h-8" />, title: 'Até 92m²', desc: 'Plantas inteligentes e amplas' },
+    { icon: <Train className="w-8 h-8" />, title: 'Metrô São Lucas', desc: 'A apenas 5 minutos de distância' },
+    { icon: <Waves className="w-8 h-8" />, title: 'Piscina Adulto', desc: 'Com deck molhado e solário' },
+    { icon: <Dumbbell className="w-8 h-8" />, title: 'Fitness', desc: 'Academia completa e equipada' },
+    { icon: <PartyPopper className="w-8 h-8" />, title: 'Lazer de Clube', desc: 'Mais de 35 itens de lazer' },
   ];
 
   return (
-    <section className="py-20 relative bg-brand-dark overflow-hidden" id="ficha-tecnica">
-      {/* Background Elementor Style */}
-      <div className="absolute inset-0 opacity-20 bg-[url('https://upside-vila-ema.online/wp-content/uploads/2025/09/UP_SIDE_VIEW_VILA_EMA.webp')] bg-cover bg-fixed bg-center"></div>
-      
-      <div className="container mx-auto px-4 max-w-6xl relative z-10">
+    <section className="py-24 bg-white" id="ficha-tecnica">
+      <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-brand-orange mb-4 uppercase tracking-tighter">O MELHOR DA VILA EMA</h2>
-          <div className="w-16 h-1 bg-white mx-auto mb-6"></div>
+          <span className="text-brand-orange font-bold uppercase tracking-[0.2em] text-sm mb-4 block">Sobre o Empreendimento</span>
+          <h2 className="text-3xl md:text-5xl font-black text-brand-dark mb-6 uppercase tracking-tighter font-outfit">
+            O MELHOR DA VILA EMA
+          </h2>
+          <div className="w-20 h-1.5 bg-brand-orange mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, idx) => (
-            <div key={idx} className="bg-brand-orange/90 backdrop-blur-md p-8 rounded-xl border border-brand-light/30 flex flex-col items-center text-center transition-transform hover:-translate-y-1">
-              <div className="mb-4">
+            <div key={idx} className="group p-8 rounded-2xl bg-brand-light hover:bg-white border border-transparent hover:border-brand-orange/20 transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-2">
+              <div className="w-16 h-16 bg-brand-orange text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-500/30 group-hover:scale-110 transition-transform">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 uppercase tracking-wide">{feature.title}</h3>
-              <p className="text-brand-cream">{feature.desc}</p>
+              <h3 className="text-xl font-bold text-brand-dark mb-3 uppercase tracking-wide font-outfit">{feature.title}</h3>
+              <p className="text-brand-gray leading-relaxed">{feature.desc}</p>
             </div>
           ))}
         </div>
