@@ -72,56 +72,6 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
           <LeadForm />
         </div>
       </div>
-      
-      <style jsx global>{`
-        .blog-content h2 {
-          font-size: 2rem;
-          font-weight: 700;
-          color: #1a1a1a;
-          margin-top: 2.5rem;
-          margin-bottom: 1.5rem;
-          font-family: var(--font-outfit);
-        }
-        .blog-content h3 {
-          font-size: 1.5rem;
-          font-weight: 700;
-          color: #1a1a1a;
-          margin-top: 2rem;
-          margin-bottom: 1rem;
-          font-family: var(--font-outfit);
-        }
-        .blog-content p {
-          margin-bottom: 1.5rem;
-        }
-        .blog-content ul, .blog-content ol {
-          margin-bottom: 1.5rem;
-          padding-left: 1.5rem;
-        }
-        .blog-content li {
-          margin-bottom: 0.5rem;
-          list-style: disc;
-        }
-        .blog-content img {
-          max-width: 100%;
-          height: auto;
-          border-radius: 1rem;
-          margin: 2rem 0;
-        }
-        .blog-content a {
-          color: #e67e22;
-          font-weight: 600;
-          text-decoration: underline;
-        }
-        .blog-content blockquote {
-          border-left: 4px solid #e67e22;
-          padding-left: 1.5rem;
-          font-style: italic;
-          margin: 2rem 0;
-          background: #fff9f5;
-          padding: 2rem;
-          border-radius: 0 1rem 1rem 0;
-        }
-      `}</style>
     </article>
   );
 }
