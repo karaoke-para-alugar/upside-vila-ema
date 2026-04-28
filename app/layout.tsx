@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 import { getRootMetadata } from "@/lib/seo";
 import { SchemaJsonLd } from "@/components/SchemaJsonLd";
 import { generateWebSiteSchema, generateLocalBusinessSchema } from "@/lib/schemas";
 import Link from "next/link";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -26,28 +26,38 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
+      className={`${outfit.variable} ${inter.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-slate-50">
+      <body className="min-h-full flex flex-col bg-white font-outfit">
         <SchemaJsonLd
           schema={[generateWebSiteSchema(), generateLocalBusinessSchema()]}
         />
         
-        {/* Top Announcement Bar */}
-        <div className="bg-brand-blue text-white text-center py-2 px-4 text-xs font-bold tracking-widest uppercase">
-          Lançamento na Vila Ema com condições exclusivas
+        {/* Top Announcement Bar - Matching WordPress Orange Style */}
+        <div className="bg-brand-orange text-white text-center py-2 px-4 text-sm font-bold tracking-wide uppercase">
+          ÚLTIMAS UNIDADES DISPONÍVEIS!
         </div>
         
-        {/* Sticky Header */}
-        <header className="sticky top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-brand-orange/30 transition-all duration-300">
-          <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-            <Link href="/" className="flex items-center gap-2">
-              {/* Logo Placeholder - Will use real logo when available */}
-              <div className="w-40 h-10 bg-contain bg-no-repeat bg-center" style={{ backgroundImage: "url('https://upside-vila-ema.online/wp-content/uploads/elementor/thumbs/Logo_Upside_view_vila_ema-1-rmkmuchjpm3zlxwmghxior9vsx4t4q73ekiimy3lhw.png')" }} />
+        {/* Sticky Header - White with Logo and CTA */}
+        <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-300">
+          <div className="container flex justify-between items-center py-4">
+            <Link href="/" className="flex items-center">
+              <img 
+                src="https://upside-vila-ema.online/wp-content/uploads/2025/09/Logo_Upside_view_vila_ema.png" 
+                alt="Upside View Vila Ema"
+                className="h-10 md:h-12 w-auto object-contain"
+              />
             </Link>
             
-            <a href="#contato" className="bg-brand-orange hover:bg-brand-light text-white px-4 md:px-6 py-2 rounded font-bold text-sm md:text-base uppercase tracking-wider transition-colors">
-              Quero Visitar
+            <nav className="hidden lg:flex items-center gap-8 text-sm font-bold uppercase tracking-wider text-brand-dark">
+              <a href="#ficha-tecnica" className="hover:text-brand-orange transition-colors">Ficha Técnica</a>
+              <a href="#galeria" className="hover:text-brand-orange transition-colors">Fotos</a>
+              <a href="#plantas" className="hover:text-brand-orange transition-colors">Plantas</a>
+              <a href="#localizacao" className="hover:text-brand-orange transition-colors">Localização</a>
+            </nav>
+
+            <a href="#contato" className="bg-brand-orange hover:bg-brand-orange-hover text-white px-5 py-3 rounded-full font-black text-xs md:text-sm uppercase tracking-widest transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+              Quero Visitar o Decorado
             </a>
           </div>
         </header>
