@@ -31,7 +31,7 @@ export const GEO = {
 };
 
 /** Logo padrão para schemas e OG */
-export const LOGO_URL = 'https://upside-vila-ema.online/wp-content/uploads/2025/09/Logo_Upside_view_vila_ema.png';
+export const LOGO_URL = 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Logo_Upside_Vila-Ema-1.png';
 
 /** Imagem padrão OG para compartilhamento */
 export const OG_IMAGE_URL = 'https://upside-vila-ema.online/wp-content/uploads/2025/09/UP_SIDE_VIEW_VILA_EMA.webp';
