@@ -16,7 +16,33 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
-    return [];
+    return [
+      {
+        source: '/quem-pode-participar-do-minha-casa-minha-vida-em-sp-requisitos-e-faixas-de-renda/',
+        destination: '/blog/quem-pode-participar-do-minha-casa-minha-vida-em-sp-requisitos-e-faixas-de-renda',
+        permanent: true,
+      },
+      {
+        source: '/o-que-tem-na-vila-ema-sao-paulo-conheca-o-upside-vila-ema/',
+        destination: '/blog/o-que-tem-na-vila-ema-sao-paulo-conheca-o-upside-vila-ema',
+        permanent: true,
+      },
+      {
+        source: '/quanto-custa-o-metro-quadrado-na-vila-ema-sao-paulo/',
+        destination: '/blog/quanto-custa-o-metro-quadrado-na-vila-ema-sao-paulo',
+        permanent: true,
+      },
+      {
+        source: '/como-e-morar-na-vila-ema-descubra-o-melhor-de-sao-paulo-para-sua-familia/',
+        destination: '/blog/como-e-morar-na-vila-ema-descubra-o-melhor-de-sao-paulo-para-sua-familia',
+        permanent: true,
+      },
+      {
+        source: '/category/:slug*',
+        destination: '/blog',
+        permanent: true,
+      }
+    ];
   },
 };
 
