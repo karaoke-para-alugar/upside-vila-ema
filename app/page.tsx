@@ -8,11 +8,13 @@ import { Plantas } from '@/components/Plantas';
 import { Galeria } from '@/components/Galeria';
 import { Localizacao } from '@/components/Localizacao';
 import { FAQ } from '@/components/FAQ';
+import { LeadForm } from '@/components/LeadForm';
+import { Footer } from '@/components/Footer';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
 
 export const metadata = generatePageMetadata({
-  title: 'Viva com Estilo, Conforto e Liberdade!',
-  description: 'Apartamentos de 2 ou 3 dormitórios na Vila Ema. Até 92m², lazer total de clube e a 5 minutos do Metrô São Lucas. Conheça o Upside Vila Ema e garanta a sua unidade.',
+  title: 'Upside Vila Ema Apartamentos 2 e 3 Dormitórios a Venda',
+  description: 'Upside View Vila Ema - Apartamentos de 2 ou 3 dormitórios a venda c/ área de até 92m², lazer total, 5 min da Estação e Metrô São Lucas. Conheça e agende sua visita.',
   path: '/',
 });
 
@@ -23,12 +25,14 @@ export default function Home() {
       <main>
         <Hero />
         <FichaTecnica />
-        <Plantas />
         <Galeria />
+        <Plantas />
         <Localizacao />
         <FAQ />
-        <WhatsAppButton />
+        <LeadForm />
       </main>
+      <Footer />
+      <WhatsAppButton />
     </>
   );
 }
