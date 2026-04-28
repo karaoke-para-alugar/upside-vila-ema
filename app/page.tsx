@@ -8,6 +8,7 @@ import { Plantas } from '@/components/Plantas';
 import { Galeria } from '@/components/Galeria';
 import { Localizacao } from '@/components/Localizacao';
 import { FAQ } from '@/components/FAQ';
+import BlogSection from '@/components/BlogSection';
 import { LeadForm } from '@/components/LeadForm';
 import { Footer } from '@/components/Footer';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
@@ -29,6 +30,7 @@ export default function Home() {
         <Plantas />
         <Localizacao />
         <FAQ />
+        <BlogSection />
         <LeadForm />
       </main>
       <Footer />
