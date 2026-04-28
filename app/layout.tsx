@@ -54,6 +54,7 @@ export default function RootLayout({
               <a href="#galeria" className="hover:text-brand-orange transition-colors">Fotos</a>
               <a href="#plantas" className="hover:text-brand-orange transition-colors">Plantas</a>
               <a href="#localizacao" className="hover:text-brand-orange transition-colors">Localização</a>
+              <Link href="/blog" className="hover:text-brand-orange transition-colors">Blog</Link>
             </nav>
 
             <a href="#contato" className="bg-brand-orange hover:bg-brand-orange-hover text-white px-5 py-3 rounded-full font-black text-xs md:text-sm uppercase tracking-widest transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
