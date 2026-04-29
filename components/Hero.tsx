@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const HERO_IMAGES = [
-  'https://upside-vila-ema.online/wp-content/uploads/2026/04/Decorado_UP_SIDE_VIEW_VILA_EMA_SALA-scaled-2-2.webp',
-  'https://upside-vila-ema.online/wp-content/uploads/2026/04/Decorado_UP_SIDE_VIEW_VILA_EMA_QUARTO-scaled-1-1.webp',
-  'https://upside-vila-ema.online/wp-content/uploads/2026/04/Upside_View_Vila_Ema_Baner-1.webp'
+  '/assets/images/Decorado_UP_SIDE_VIEW_VILA_EMA_SALA-scaled-2-2.webp',
+  '/assets/images/Decorado_UP_SIDE_VIEW_VILA_EMA_QUARTO-scaled-1-1.webp',
+  '/assets/images/Upside_View_Vila_Ema_Baner-1.webp'
 ];
 
 export function Hero() {
@@ -45,8 +45,13 @@ export function Hero() {
       </div>
 
       <div className="container relative z-20 text-center max-w-5xl">
+        {/* Banner ÚLTIMAS UNIDADES */}
+        <div className="inline-block bg-brand-orange text-white px-6 py-2 rounded-full font-black text-sm uppercase tracking-[0.3em] mb-8 animate-pulse shadow-xl">
+          Últimas Unidades Disponíveis
+        </div>
+
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-8 drop-shadow-lg font-outfit uppercase tracking-tighter">
-          Upside Vila Ema: viva com estilo e conforto!
+          Upside Vila Ema: viva melhor com conforto, estilo e praticidade!
         </h1>
         <p className="text-lg md:text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md font-medium">
           Descubra o privilégio de morar em um projeto moderno, com lazer completo e a apenas 5 minutos do Metrô São Lucas. O seu novo capítulo começa aqui.

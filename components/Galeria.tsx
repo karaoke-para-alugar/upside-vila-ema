@@ -16,17 +16,9 @@ const CONDOMINIO_IMAGES = [
   'Up_side_Vila_Ema_fitness-1.webp',
   'Up_side_Vila_Ema_churrasqueira-1.webp',
   'Up_side_View_Vila_Ema_piscina_infantil-1.webp',
-  'Upside_Vila_Ema_portaria-1.webp',
-  'Upside_Vila_Ema_piscina_adulto_2-1.webp',
-  'Upside_Vila_Ema_piscina_adulto-1.webp',
-  'Upside_Vila_Ema_mini-market-1.webp',
   'Upside_Vila_Ema_lavanderia-1.webp',
-  'Upside_View_Vila_Ema_delivery-1.webp',
-  'Upside_Vila_Ema_game-room-1.webp',
-  'Upside_View_Vila_Ema_bicicletario-1.webp',
-  'Upside_View_Vila_Ema_academia-1.webp'
 ].map(img => ({
-  src: `https://upside-vila-ema.online/wp-content/uploads/2026/04/${img}`,
+  src: `/assets/images/${img}`,
   alt: img.replace(/_/g, ' ').replace('-1.webp', '').replace('Upside Vila Ema ', '')
 }));
 
@@ -34,32 +26,30 @@ const DECORADO_IMAGES = [
   'Decorado-View-71-scaled-1-1.webp',
   'UPSIDE_VILA_EMA_SALA-scaled-1-1.webp',
   'UP_SIDE_VILA_EMA_QUARTO_2-scaled-1-1.webp',
-  'Up_side_Vila_Ema_churrasqueira-1.webp',
   'Decorado_UPSIDE_VILA_EMA_JANTAR-scaled-1-1.webp',
   'Decorado_UPSIDE_VIEW_VILA_EMA_QUARTO_2-scaled-1-1.webp',
   'Decorado_UPSIDE_VIEW_VILA_EMA_COZINHA-scaled-1-1.webp',
   'Decorado_UPSIDE_VIEW_VILA_EMA_bANHEIRO-scaled-1-1.webp',
-  'Decorado_UPSIDE_VIEW_VILA_EMA_QUARTO-scaled-1-1.webp',
-  'Decorado_UPSIDE_VIEW_VILA_EMA_SALA-scaled-1-1.webp',
-  'Decorado_UPSIDE_VIEW_VILA_EMA_JANTAR-scaled-1-1.webp',
-  'Decorado_UPSIDE_VIEW_VILA_EMA_CHURRASQUEIRA-scaled-1-1.webp',
-  'Decorado-View-67-scaled-1-1.webp',
-  'Decorado-View-64-scaled-1-1.webp',
-  'Decorado-View-61-scaled-1-1.webp',
-  'Decorado-View-58-scaled-1-1.webp',
-  'Decorado-View-55-scaled-1-1.webp',
-  'Decorado-View-52-scaled-1-1.webp',
-  'Decorado-View-49-scaled-1-1.webp'
+  'Decorado_UP_SIDE_VIEW_VILA_EMA_QUARTO-scaled-1-1.webp',
+  'Decorado_UP_SIDE_VIEW_VILA_EMA_SALA-scaled-2-2.webp',
 ].map(img => ({
-  src: `https://upside-vila-ema.online/wp-content/uploads/2026/04/${img}`,
+  src: `/assets/images/${img}`,
   alt: img.replace(/_/g, ' ').replace('-scaled-1-1.webp', '').replace('-1.webp', '').replace('Upside Vila Ema Decorado ', '')
 }));
 
+const PLANTAS_IMAGES = [
+  { src: '/assets/images/UpSide_View_Vila_Ema_Planta_2_Dormitorios_47m-scaled-1-1.webp', alt: 'Planta 47m² - 2 Dormitórios' },
+  { src: '/assets/images/UpSide_View_Vila_Ema_Planta_2_Dormitorios_48m-scaled-1-1.webp', alt: 'Planta 48m² - 2 Dormitórios' },
+  { src: '/assets/images/Up_Side_Vila_Ema_Planta_2_Dormitorios_805m-scaled-1-1.webp', alt: 'Planta 80,5m² - 2 Dorm. (1 Suíte)' },
+  { src: '/assets/images/UpSide_Vila_Ema_Planta_3_Dormitorios_805m-scaled-1-1.webp', alt: 'Planta 80,5m² - 3 Dorm. (1 Suíte)' },
+  { src: '/assets/images/UpSide_Vila_Ema_Planta_3_Dormitorios_92m-scaled-1-1.webp', alt: 'Planta 92m² - 3 Dorm. (1 Suíte)' },
+];
+
 export function Galeria() {
-  const [activeTab, setActiveTab] = useState<'condominio' | 'decorado'>('condominio');
+  const [activeTab, setActiveTab] = useState<'condominio' | 'decorado' | 'plantas'>('condominio');
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = activeTab === 'condominio' ? CONDOMINIO_IMAGES : DECORADO_IMAGES;
+  const images = activeTab === 'condominio' ? CONDOMINIO_IMAGES : activeTab === 'decorado' ? DECORADO_IMAGES : PLANTAS_IMAGES;
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -69,7 +59,7 @@ export function Galeria() {
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
-  const handleTabChange = (tab: 'condominio' | 'decorado') => {
+  const handleTabChange = (tab: 'condominio' | 'decorado' | 'plantas') => {
     setActiveTab(tab);
     setCurrentIndex(0);
   };
@@ -86,10 +76,10 @@ export function Galeria() {
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
           <button
             onClick={() => handleTabChange('condominio')}
-            className={`px-8 py-3 rounded-full font-bold uppercase tracking-widest text-sm transition-all shadow-md ${
+            className={`px-6 py-3 rounded-full font-bold uppercase tracking-widest text-xs md:text-sm transition-all shadow-md ${
               activeTab === 'condominio' 
                 ? 'bg-brand-orange text-white' 
                 : 'bg-white text-brand-dark hover:bg-gray-100'
@@ -99,13 +89,23 @@ export function Galeria() {
           </button>
           <button
             onClick={() => handleTabChange('decorado')}
-            className={`px-8 py-3 rounded-full font-bold uppercase tracking-widest text-sm transition-all shadow-md ${
+            className={`px-6 py-3 rounded-full font-bold uppercase tracking-widest text-xs md:text-sm transition-all shadow-md ${
               activeTab === 'decorado' 
                 ? 'bg-brand-orange text-white' 
                 : 'bg-white text-brand-dark hover:bg-gray-100'
             }`}
           >
-            Apartamento Decorado
+            Decorado
+          </button>
+          <button
+            onClick={() => handleTabChange('plantas')}
+            className={`px-6 py-3 rounded-full font-bold uppercase tracking-widest text-xs md:text-sm transition-all shadow-md ${
+              activeTab === 'plantas' 
+                ? 'bg-brand-orange text-white' 
+                : 'bg-white text-brand-dark hover:bg-gray-100'
+            }`}
+          >
+            Plantas
           </button>
         </div>
 
