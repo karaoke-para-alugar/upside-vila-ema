@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${outfit.variable} ${inter.variable} ${montserrat.variable} h-full antialiased scroll-smooth`}
+      className={`${outfit.variable} ${inter.variable} ${montserrat.variable} ${lato.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-white font-outfit">
         <SchemaJsonLd
