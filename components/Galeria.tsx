@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const CONDOMINIO_IMAGES = [
-  'Lacamento_Up_side_View_Vila_Ema_Fachada-1.webp',
   'Upside_Vila_Ema_gourmet-1.webp',
   'Upside_Vila_Ema_-beauty-1.webp',
   'Upside_View_Vila_Ema_brinquedoteca-1.webp',
