@@ -37,7 +37,7 @@ export function FichaTecnica() {
           {/* Facade Image */}
           <div className="w-full lg:w-1/2 relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/assets/images/Upside-Vila-Ema-Fachada-Principal-1024x576.webp"
+              src="/assets/images/Lacamento_Up_side_View_Vila_Ema_Fachada-1.webp"
               alt="Fachada Upside Vila Ema"
               fill
               className="object-cover"
