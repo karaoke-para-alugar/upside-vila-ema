@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Inter, Montserrat } from "next/font/google";
+import { Outfit, Inter, Montserrat, Lato } from "next/font/google";
 import "./globals.css";
 import { getRootMetadata } from "@/lib/seo";
 import { SchemaJsonLd } from "@/components/SchemaJsonLd";
@@ -19,6 +19,12 @@ const inter = Inter({
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
+});
+
+const lato = Lato({
+  variable: "--font-lato",
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"],
 });
 
 export const metadata: Metadata = getRootMetadata();
