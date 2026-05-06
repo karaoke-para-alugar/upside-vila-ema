@@ -43,7 +43,7 @@ export default function RootLayout({
           <div className="container flex justify-between items-center py-4">
             <Link href="/" className="flex items-center">
               <img 
-                src="https://upside-vila-ema.online/wp-content/uploads/2026/04/Logo_Upside_Vila-Ema-1.png" 
+                src="/assets/images/Logo_Upside_Vila-Ema-1.png" 
                 alt="Upside View Vila Ema"
                 className="h-10 md:h-12 w-auto object-contain"
               />

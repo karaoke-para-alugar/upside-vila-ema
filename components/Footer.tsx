@@ -9,7 +9,7 @@ export function Footer() {
           {/* Logo e Descrição */}
           <div className="lg:col-span-2 space-y-6">
             <img 
-              src="https://upside-vila-ema.online/wp-content/uploads/2025/09/Logo_Upside_view_vila_ema.png" 
+              src="/assets/images/Logo_Upside_view_vila_ema.png" 
               alt="Upside View Vila Ema"
               className="h-12 w-auto brightness-0 invert"
             />

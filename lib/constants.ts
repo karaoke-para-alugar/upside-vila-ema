@@ -31,10 +31,10 @@ export const GEO = {
 };
 
 /** Logo padrão para schemas e OG */
-export const LOGO_URL = 'https://upside-vila-ema.online/wp-content/uploads/2026/04/Logo_Upside_Vila-Ema-1.png';
+export const LOGO_URL = '/assets/images/Logo_Upside_Vila-Ema-1.png';
 
 /** Imagem padrão OG para compartilhamento */
-export const OG_IMAGE_URL = 'https://upside-vila-ema.online/wp-content/uploads/2025/09/UP_SIDE_VIEW_VILA_EMA.webp';
+export const OG_IMAGE_URL = '/assets/images/UP_SIDE_VIEW_VILA_EMA.webp';
 
 /** Lista de rotas públicas do site para sitemap e navegação */
 export const PUBLIC_ROUTES = [
