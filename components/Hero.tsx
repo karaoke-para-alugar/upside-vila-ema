@@ -39,8 +39,9 @@ export function Hero() {
             />
           </div>
         ))}
-        {/* Overlay with orange tint to highlight text */}
-        <div className="absolute inset-0 bg-[var(--hero-overlay)] z-10"></div>
+        {/* Darker overlay for better contrast as requested */}
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <div className="absolute inset-0 bg-brand-orange/20 z-10"></div>
       </div>
 
       <div className="container relative z-20 text-center max-w-5xl">
@@ -49,16 +50,16 @@ export function Hero() {
           Últimas Unidades Disponíveis
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-8 drop-shadow-[2px_2px_10px_rgba(0,0,0,0.7)] font-montserrat uppercase tracking-tighter">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#FFF8E1] leading-[1.1] mb-8 drop-shadow-[4px_4px_15px_rgba(0,0,0,0.9)] font-montserrat uppercase tracking-tighter">
           Upside Vila Ema: viva melhor com conforto, estilo e praticidade!
         </h1>
-        <p className="text-lg md:text-xl text-white mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-[1px_1px_5px_rgba(0,0,0,0.7)] font-montserrat font-medium">
-          Descubra o privilégio de morar em um projeto moderno, com lazer completo e a apenas 5 minutos do Metrô São Lucas. O seu novo capítulo começa aqui.
+        <p className="text-lg md:text-xl text-white mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-[2px_2px_8px_rgba(0,0,0,0.8)] font-montserrat font-medium">
+          O Upside Vila Ema foi pensado para quem deseja morar em um apartamento moderno, bem localizado e com estrutura completa para o dia a dia. Uma excelente opção para quem busca qualidade de vida, lazer e facilidade na Zona Leste de São Paulo.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <a href="#contato" className="w-full sm:w-auto px-12 py-5 bg-brand-orange hover:bg-brand-orange-hover text-white font-black rounded-full text-lg uppercase tracking-widest transition-all shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-1 font-montserrat">
-            Quero Visitar o Decorado
+            Quero Agendar uma Visita
           </a>
         </div>
       </div>
