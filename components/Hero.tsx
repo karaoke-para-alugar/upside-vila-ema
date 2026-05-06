@@ -6,6 +6,7 @@ import Image from 'next/image';
 const HERO_IMAGES = [
   '/assets/images/Decorado_UP_SIDE_VIEW_VILA_EMA_SALA-scaled-2-2.webp',
   '/assets/images/Decorado_UP_SIDE_VIEW_VILA_EMA_QUARTO-scaled-1-1.webp',
+  '/assets/images/Decorado_UPSIDE_VIEW_VILA_EMA_COZINHA-scaled-1-1.webp',
 ];
 
 export function Hero() {
@@ -50,15 +51,15 @@ export function Hero() {
           Últimas Unidades Disponíveis
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#FFF8E1] leading-[1.1] mb-8 drop-shadow-[4px_4px_15px_rgba(0,0,0,0.9)] font-montserrat uppercase tracking-tighter">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#FFF8E1] leading-[1.1] mb-8 drop-shadow-[4px_4px_15px_rgba(0,0,0,0.9)] font-outfit uppercase tracking-tighter">
           Upside Vila Ema: viva melhor com conforto, estilo e praticidade!
         </h1>
-        <p className="text-lg md:text-xl text-white mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-[2px_2px_8px_rgba(0,0,0,0.8)] font-montserrat font-medium">
+        <p className="text-lg md:text-xl text-white mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-[2px_2px_8px_rgba(0,0,0,0.8)] font-outfit font-medium">
           O Upside Vila Ema foi pensado para quem deseja morar em um apartamento moderno, bem localizado e com estrutura completa para o dia a dia. Uma excelente opção para quem busca qualidade de vida, lazer e facilidade na Zona Leste de São Paulo.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <a href="#contato" className="w-full sm:w-auto px-12 py-5 bg-brand-orange hover:bg-brand-orange-hover text-white font-black rounded-full text-lg uppercase tracking-widest transition-all shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-1 font-montserrat">
+          <a href="#contato" className="w-full sm:w-auto px-12 py-5 bg-brand-orange hover:bg-brand-orange-hover text-white font-black rounded-full text-lg uppercase tracking-widest transition-all shadow-2xl hover:shadow-orange-500/20 transform hover:-translate-y-1 font-outfit">
             Quero Agendar uma Visita
           </a>
         </div>
