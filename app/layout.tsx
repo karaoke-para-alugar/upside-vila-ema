@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Inter } from "next/font/google";
+import { Outfit, Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import { getRootMetadata } from "@/lib/seo";
 import { SchemaJsonLd } from "@/components/SchemaJsonLd";
@@ -16,6 +16,11 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = getRootMetadata();
 
 export default function RootLayout({
@@ -26,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${outfit.variable} ${inter.variable} h-full antialiased scroll-smooth`}
+      className={`${outfit.variable} ${inter.variable} ${montserrat.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-white font-outfit">
         <SchemaJsonLd
