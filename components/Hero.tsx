@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const HERO_IMAGES = [
-  '/assets/images/Lacamento_Up_side_View_Vila_Ema_Fachada-1.webp',
   '/assets/images/Decorado_UP_SIDE_VIEW_VILA_EMA_SALA-scaled-2-2.webp',
   '/assets/images/Decorado_UP_SIDE_VIEW_VILA_EMA_QUARTO-scaled-1-1.webp',
 ];
