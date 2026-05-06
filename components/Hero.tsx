@@ -51,7 +51,7 @@ export function Hero() {
           Últimas Unidades Disponíveis
         </div>
 
-        <h1 className="text-[54px] font-bold text-[#FFF8E1] leading-[1.1] mb-8 drop-shadow-[4px_4px_15px_rgba(0,0,0,0.9)] font-lato">
+        <h1 className="text-[58px] font-bold text-[#FFF8E1] leading-[1.1] mb-8 drop-shadow-[4px_4px_15px_rgba(0,0,0,0.9)] font-lato">
           Upside Vila Ema: viva melhor com conforto, estilo e praticidade!
         </h1>
         <p className="text-lg md:text-xl text-white mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-[2px_2px_8px_rgba(0,0,0,0.8)] font-outfit font-medium">
